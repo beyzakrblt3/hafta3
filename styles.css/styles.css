@@ -1,0 +1,424 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+/* Hakkımızda Başlığı Ortalamak */
+.about h1 {
+  text-align: center; /* Başlığı ortalar */
+  font-size: 36px; /* Başlık boyutunu ayarlayabilirsiniz */
+  color: #2e3a59; /* Başlık için renk */
+  margin-bottom: 20px; /* Başlık ile diğer içerik arasında boşluk */
+}
+
+/* Navbar Sabitleme */
+header {
+  background-color: #2e3a59;
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Diğer içeriklerin altında kalmaması için */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* İçerik ile navbar arasındaki boşluk */
+main {
+  padding-top: 80px; /* Navbar'ın üzerine düşmemesi için boşluk ekleyin */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* İçerik ile navbar arasındaki boşluk */
+main {
+  padding-top: 80px; /* Navbar'ın üzerine düşmemesi için boşluk ekleyin */
+}
+
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Giriş Bölümü */
+.intro {
+  max-width: 1000px;
+  margin: 50px auto 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Seyahat Noktaları */
+.destinations {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.destination-card {
+  display: inline-block;
+  width: 300px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+}
+
+.destination-card p {
+  padding: 0 15px 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Sanatçılar Bölümü */
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #e74c3c;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sanatçılar Bölümü */
+.artists {
+    text-align: center;
+}
+
+.artists h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.artists p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+}
+
+.artist-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.artist-card h3 {
+    font-size: 1.6em;
+    margin-top: 15px;
+    color: #34495e;
+}
+
+.artist-card p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+}
+
+.artist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Sanatçı Kartları */
+.artist-card {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+  transform: translateY(-5px);
+}
+
+.artist-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.artist-card h3 {
+  font-size: 24px;
+  color: #2e3a59;
+  margin-bottom: 15px;
+}
+
+.artist-card ul {
+  padding-left: 20px;
+}
+
+.artist-card li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Sanat Eserleri Bölümü */
+
+
+/* İletişim */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background-color: #2e3a59;
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* İçerik ile navbar arasındaki boşluk */
+main {
+  padding-top: 80px; /* Navbar'ın üzerine düşmemesi için boşluk ekleyin */
+  padding: 20px;
+  text-align: center;
+}
+
+/* "İletişim" Başlığı Ortalamak ve Tam Gösterme */
+.contact h1 {
+  text-align: center; /* Başlığı ortalar */
+  font-size: 36px; /* Başlık boyutunu ayarlayabilirsiniz */
+  color: #2e3a59; /* Başlık için renk */
+  margin-bottom: 20px; /* Başlık ile diğer içerik arasında boşluk */
+  word-wrap: break-word; /* Başlık çok uzun olduğunda satır başı yapar */
+  width: 100%; /* Başlığın genişliğini sınırlamadan tamamen yayılmasını sağlar */
+  white-space: normal; /* Yazının satırlara yayılmasını sağlar */
+}
+
+/* Form ve Buton Stilini Düzenlemek */
+form {
+  max-width: 500px;
+  margin: 0 auto; /* Ortalamak için */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e3a59;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ffd700;
+}
+
+/* Footer */
+footer {
+  background-color: #2e3a59;
+  color: #fff;
+
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+
+

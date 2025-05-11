@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alıntılar</title>
+    <link rel="stylesheet" href="styles.css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="seyehatrehberi.html">Seyahat Rehberi</a></li>
+                <li><a href="sanateserleri.html">Sanat Eserleri</a></li>
+                <li><a href="tarihiyerler.html">Tarihi Yerler</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                 <li><a href="sanatcilar.html">Sanatçılar</a></li>
+                  <li><a href="alintilar.html">Alıntılar</a></li>
+                   <li><a href="etkinlikler.html">Etkinlikler</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Alıntı Arama ve Filtreleme -->
+        <section class="search-section">
+            <h1>Alıntılar</h1>
+            <label for="search">Alıntı Ara:</label>
+            <input type="text" id="search" placeholder="Alıntı arayın...">
+        </section>
+
+        <!-- Alıntı Kategorisi Seçimi -->
+        <section class="category-section">
+            <label for="category">Kategori Seçin:</label>
+            <select id="category" name="category">
+                <option value="all">Tümü</option>
+                <option value="sanat">Sanat</option>
+                <option value="tarih">Tarih</option>
+                <option value="seyahat">Seyahat</option>
+            </select>
+        </section>
+
+        <!-- Alıntı Gönderme Formu -->
+        <section class="add-quote-section">
+            <h3>Kendi Alıntınızı Ekleyin:</h3>
+            <br>
+            <form id="quoteForm">
+                <label for="userQuote">Alıntınız:</label>
+                <textarea id="userQuote" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+
+        <!-- Alıntılar Listesi -->
+        <section class="quote-list">
+            <br>
+            <h2>Alıntılar:</h2>
+            <ul id="quoteList">
+                <!-- Dinamik olarak buraya alıntılar eklenecek -->
+            </ul>
+        </section>
+
+        <!-- Favorilere Ekle -->
+        <section class="favorites-section">
+            <h3>Favorilere Ekle:</h3>
+            <button onclick="addToFavorites()">Favorilere Ekle</button>
+            <ul id="favoritesList"></ul>
+        </section>
+
+        <!-- Alıntı Zıt Alıntılar -->
+        <section class="contrary-quote-section">
+            <h3>Alıntılar ve Zıt Görüşler</h3>
+            <div class="quote-with-contrary">
+                <p>“Sanat, duyguların evrensel dilidir.” - Pablo Picasso</p>
+                <p class="contrary-quote">Zıt Alıntı: “Sanat, bazen insanın en karanlık yönlerini de ortaya çıkarabilir.” - Unknown</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><a href="iletisim.html">İletişim</a></li></p>
+        <p>&copy; 2025 Seyahat ve Sanat Web Sitesi</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
